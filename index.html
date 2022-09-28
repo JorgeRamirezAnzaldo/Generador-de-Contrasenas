@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Generador de contraseñas</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Generador de contraseñas</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generar una contraseña</h2>
+        </div>
+        <div class="card-body">
+          <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generar contraseña</button>
+        </div>
+      </div>
+    </div>
+
+    <dialog id="OptionsDialog">
+      <form id = "form" method="dialog">
+        <p>
+          <label>Seleccione sus opciones deseadas:<br>
+            <input type="checkbox" id="may">
+            <label for="may">Incluir mayúsculas</label><br>
+            <input type="checkbox" id="min">
+            <label for="min">Incluir minúsculas</label><br>
+            <input type="checkbox" id="num">
+            <label for="num">Incluir números</label><br>
+            <input type="checkbox" id="car">
+            <label for="car">Incluir caracteres especiales</label><br>
+          </label>
+        </p>
+        <div>
+          <button value="cancel">Cancel</button>
+          <button type="submit" id="confirmBtn" value="default">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
