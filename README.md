@@ -18,9 +18,11 @@ ENTONCES se genera una contraseña que cumple con los requisitos seleccionados
 CUANDO se generó la contraseña  
 ENTONCES la constraseña se muestra en una alerta o se escribe en la página  
 
+Además, los caracteres especiales que pueden incluirse aleatoriamente en la contraseña corresponden a la lista de caracteres especiales de contraseña de OWASP Foundation.
+
 ## Se puede acceder a la aplicación por medio del siguiente link:
 
-* [Link a aplicación]()
+* [Link a aplicación](https://jorgeramirezanzaldo.github.io/Generador-de-Contrasenas/)
 
 ## La aplicación luce tal como se muestra en la siguiente imagen:
 
